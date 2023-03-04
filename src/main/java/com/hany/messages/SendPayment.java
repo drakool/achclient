@@ -14,7 +14,7 @@ import java.util.UUID;
 public class SendPayment {
     private UUID paymentId;
     private UUID payeeId;
-    private String payoutMemo;
+    private String payoutMemo; 
     private Long amount;
     private String payeeFirstName;
     private String payeeLastName;

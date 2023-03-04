@@ -1,8 +1,9 @@
-package guru.springframework.maplombok.svb.model;
+package hany.modern.treasury.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Builder;
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -16,8 +17,7 @@ import java.time.LocalDate;
  *
  * *** Property level comments are from SVB docs
  */
-@Getter
-@Setter
+@Data
 @Builder
 public class AchTransferObject {
 
