@@ -1,0 +1,476 @@
+[
+  {
+    "id": "ca48cbe1-f789-4275-98ec-a9fc6575d7e9",
+    "object": "internal_account",
+    "live_mode": false,
+    "account_type": null,
+    "party_name": "Segmatek",
+    "party_type": null,
+    "party_address": {
+      "id": "d0a4c89e-dc6c-405a-83f2-a7c3585ed394",
+      "object": "address",
+      "live_mode": false,
+      "line1": "8312 Larson Unions",
+      "line2": "Suite 296",
+      "locality": "Port Wiley",
+      "region": "SC",
+      "postal_code": "35337-0061",
+      "country": "US",
+      "created_at": "2023-03-03T21:11:28Z",
+      "updated_at": "2023-03-03T21:11:28Z"
+    },
+    "account_details": [
+      {
+        "id": "37e970e0-10f8-4bb2-81f4-2a7fd4ea2a8c",
+        "object": "account_detail",
+        "live_mode": false,
+        "account_number": "7079239140",
+        "account_number_safe": "9140",
+        "account_number_type": "other",
+        "discarded_at": null,
+        "created_at": "2023-03-03T21:11:28Z",
+        "updated_at": "2023-03-03T21:11:28Z"
+      }
+    ],
+    "routing_details": [
+      {
+        "id": "74015011-c15e-408e-a4b1-12e41a2bfd0c",
+        "object": "routing_detail",
+        "live_mode": false,
+        "payment_type": null,
+        "routing_number": "064105734",
+        "routing_number_type": "aba",
+        "bank_name": "Wayne County Bank",
+        "bank_address": {
+          "id": "35836720-d77e-4c17-8b86-44acdf566d75",
+          "object": "address",
+          "live_mode": false,
+          "line1": "216 S High St",
+          "line2": null,
+          "locality": "Waynesboro",
+          "region": "TN",
+          "postal_code": "38485-9723",
+          "country": "US",
+          "created_at": "2023-03-03T21:11:28Z",
+          "updated_at": "2023-03-03T21:11:28Z"
+        },
+        "discarded_at": null,
+        "created_at": "2023-03-03T21:11:28Z",
+        "updated_at": "2023-03-03T21:11:28Z"
+      }
+    ],
+    "name": "Corporate",
+    "metadata": {},
+    "connection": {
+      "id": "ee31bbf2-c009-4261-a7ca-4414d92a377c",
+      "object": "connection",
+      "live_mode": false,
+      "vendor_id": "example2",
+      "vendor_name": "Iron Bank of Braavos",
+      "vendor_customer_id": null,
+      "discarded_at": null,
+      "created_at": "2023-03-03T21:11:28Z",
+      "updated_at": "2023-03-03T21:11:28Z"
+    },
+    "currency": "USD",
+    "parent_account_id": null,
+    "counterparty_id": null,
+    "created_at": "2023-03-03T21:11:28Z",
+    "updated_at": "2023-03-03T21:11:28Z"
+  },
+  {
+    "id": "73e93003-5f31-41ea-a9bf-0efcbcec7a54",
+    "object": "internal_account",
+    "live_mode": false,
+    "account_type": null,
+    "party_name": "Segmatek",
+    "party_type": null,
+    "party_address": {
+      "id": "40fcc0d5-1a2b-4c87-b195-9ca42cf90caf",
+      "object": "address",
+      "live_mode": false,
+      "line1": "8312 Larson Unions",
+      "line2": "Suite 296",
+      "locality": "Port Wiley",
+      "region": "SC",
+      "postal_code": "35337-0061",
+      "country": "US",
+      "created_at": "2023-03-03T21:11:28Z",
+      "updated_at": "2023-03-03T21:11:28Z"
+    },
+    "account_details": [
+      {
+        "id": "31fa41bc-3b3b-499e-8eee-0bcf9754ccc2",
+        "object": "account_detail",
+        "live_mode": false,
+        "account_number": "8112111400",
+        "account_number_safe": "1400",
+        "account_number_type": "other",
+        "discarded_at": null,
+        "created_at": "2023-03-03T21:11:28Z",
+        "updated_at": "2023-03-03T21:11:28Z"
+      }
+    ],
+    "routing_details": [
+      {
+        "id": "090bc021-87a4-4b76-afb1-48cc8dfcdddc",
+        "object": "routing_detail",
+        "live_mode": false,
+        "payment_type": null,
+        "routing_number": "064105734",
+        "routing_number_type": "aba",
+        "bank_name": "Wayne County Bank",
+        "bank_address": {
+          "id": "35836720-d77e-4c17-8b86-44acdf566d75",
+          "object": "address",
+          "live_mode": false,
+          "line1": "216 S High St",
+          "line2": null,
+          "locality": "Waynesboro",
+          "region": "TN",
+          "postal_code": "38485-9723",
+          "country": "US",
+          "created_at": "2023-03-03T21:11:28Z",
+          "updated_at": "2023-03-03T21:11:28Z"
+        },
+        "discarded_at": null,
+        "created_at": "2023-03-03T21:11:28Z",
+        "updated_at": "2023-03-03T21:11:28Z"
+      }
+    ],
+    "name": "Expenses",
+    "metadata": {},
+    "connection": {
+      "id": "ee31bbf2-c009-4261-a7ca-4414d92a377c",
+      "object": "connection",
+      "live_mode": false,
+      "vendor_id": "example2",
+      "vendor_name": "Iron Bank of Braavos",
+      "vendor_customer_id": null,
+      "discarded_at": null,
+      "created_at": "2023-03-03T21:11:28Z",
+      "updated_at": "2023-03-03T21:11:28Z"
+    },
+    "currency": "USD",
+    "parent_account_id": null,
+    "counterparty_id": null,
+    "created_at": "2023-03-03T21:11:28Z",
+    "updated_at": "2023-03-03T21:11:28Z"
+  },
+  {
+    "id": "54146554-946f-4a75-97ca-d0a26dfb5032",
+    "object": "internal_account",
+    "live_mode": false,
+    "account_type": null,
+    "party_name": "Segmatek",
+    "party_type": null,
+    "party_address": {
+      "id": "e8d77a4e-182f-4724-8a4c-1bd5cf53921d",
+      "object": "address",
+      "live_mode": false,
+      "line1": "8312 Larson Unions",
+      "line2": "Suite 296",
+      "locality": "Port Wiley",
+      "region": "SC",
+      "postal_code": "35337-0061",
+      "country": "US",
+      "created_at": "2023-03-03T21:11:28Z",
+      "updated_at": "2023-03-03T21:11:28Z"
+    },
+    "account_details": [
+      {
+        "id": "8c88ee7f-4a42-40ac-8741-67ade9a343cc",
+        "object": "account_detail",
+        "live_mode": false,
+        "account_number": "6276445727",
+        "account_number_safe": "5727",
+        "account_number_type": "other",
+        "discarded_at": null,
+        "created_at": "2023-03-03T21:11:28Z",
+        "updated_at": "2023-03-03T21:11:28Z"
+      }
+    ],
+    "routing_details": [
+      {
+        "id": "9d92eb86-a24d-46f8-bdac-28d06636932b",
+        "object": "routing_detail",
+        "live_mode": false,
+        "payment_type": null,
+        "routing_number": "064105734",
+        "routing_number_type": "aba",
+        "bank_name": "Wayne County Bank",
+        "bank_address": {
+          "id": "35836720-d77e-4c17-8b86-44acdf566d75",
+          "object": "address",
+          "live_mode": false,
+          "line1": "216 S High St",
+          "line2": null,
+          "locality": "Waynesboro",
+          "region": "TN",
+          "postal_code": "38485-9723",
+          "country": "US",
+          "created_at": "2023-03-03T21:11:28Z",
+          "updated_at": "2023-03-03T21:11:28Z"
+        },
+        "discarded_at": null,
+        "created_at": "2023-03-03T21:11:28Z",
+        "updated_at": "2023-03-03T21:11:28Z"
+      }
+    ],
+    "name": "Revenue",
+    "metadata": {},
+    "connection": {
+      "id": "ee31bbf2-c009-4261-a7ca-4414d92a377c",
+      "object": "connection",
+      "live_mode": false,
+      "vendor_id": "example2",
+      "vendor_name": "Iron Bank of Braavos",
+      "vendor_customer_id": null,
+      "discarded_at": null,
+      "created_at": "2023-03-03T21:11:28Z",
+      "updated_at": "2023-03-03T21:11:28Z"
+    },
+    "currency": "USD",
+    "parent_account_id": null,
+    "counterparty_id": null,
+    "created_at": "2023-03-03T21:11:28Z",
+    "updated_at": "2023-03-03T21:11:28Z"
+  },
+  {
+    "id": "0426f0ce-d383-49d3-89e9-be2f44015729",
+    "object": "internal_account",
+    "live_mode": false,
+    "account_type": null,
+    "party_name": "Segmatek",
+    "party_type": null,
+    "party_address": {
+      "id": "1ca3c207-7048-4a1a-8d20-fe8e3ada4bd4",
+      "object": "address",
+      "live_mode": false,
+      "line1": "888 Maisie River",
+      "line2": "Suite 763",
+      "locality": "South Robbie",
+      "region": "WI",
+      "postal_code": "80782-2023",
+      "country": "US",
+      "created_at": "2023-03-03T21:11:27Z",
+      "updated_at": "2023-03-03T21:11:27Z"
+    },
+    "account_details": [
+      {
+        "id": "a879792a-e72b-440b-85fb-8501d241a025",
+        "object": "account_detail",
+        "live_mode": false,
+        "account_number": "2490289348",
+        "account_number_safe": "9348",
+        "account_number_type": "other",
+        "discarded_at": null,
+        "created_at": "2023-03-03T21:11:27Z",
+        "updated_at": "2023-03-03T21:11:27Z"
+      }
+    ],
+    "routing_details": [
+      {
+        "id": "32158593-81cc-4521-afcd-ac7964a8a721",
+        "object": "routing_detail",
+        "live_mode": false,
+        "payment_type": null,
+        "routing_number": "021000021",
+        "routing_number_type": "aba",
+        "bank_name": "JPMorgan Chase Bank National Association",
+        "bank_address": {
+          "id": "9f8f84c6-8b06-4232-914f-405009fb392b",
+          "object": "address",
+          "live_mode": false,
+          "line1": "1111 Polaris Parkway",
+          "line2": null,
+          "locality": "Columbus",
+          "region": "OH",
+          "postal_code": "43240",
+          "country": "US",
+          "created_at": "2023-03-03T21:11:27Z",
+          "updated_at": "2023-03-03T21:11:27Z"
+        },
+        "discarded_at": null,
+        "created_at": "2023-03-03T21:11:27Z",
+        "updated_at": "2023-03-03T21:11:27Z"
+      }
+    ],
+    "name": "Corporate",
+    "metadata": {},
+    "connection": {
+      "id": "285ef2ba-b8a1-4765-8e0f-c4c0dad9d5ac",
+      "object": "connection",
+      "live_mode": false,
+      "vendor_id": "example1",
+      "vendor_name": "Gringotts Wizarding Bank",
+      "vendor_customer_id": null,
+      "discarded_at": null,
+      "created_at": "2023-03-03T21:11:27Z",
+      "updated_at": "2023-03-03T21:11:27Z"
+    },
+    "currency": "USD",
+    "parent_account_id": null,
+    "counterparty_id": null,
+    "created_at": "2023-03-03T21:11:27Z",
+    "updated_at": "2023-03-03T21:11:27Z"
+  },
+  {
+    "id": "f86f53bb-9c59-4f90-9faa-10469bc7d7c0",
+    "object": "internal_account",
+    "live_mode": false,
+    "account_type": null,
+    "party_name": "Segmatek",
+    "party_type": null,
+    "party_address": {
+      "id": "531d8f01-836c-4709-ab92-69458440720c",
+      "object": "address",
+      "live_mode": false,
+      "line1": "888 Maisie River",
+      "line2": "Suite 763",
+      "locality": "South Robbie",
+      "region": "WI",
+      "postal_code": "80782-2023",
+      "country": "US",
+      "created_at": "2023-03-03T21:11:27Z",
+      "updated_at": "2023-03-03T21:11:27Z"
+    },
+    "account_details": [
+      {
+        "id": "69821c90-0185-4df0-b4b5-7255733157d6",
+        "object": "account_detail",
+        "live_mode": false,
+        "account_number": "6625165225",
+        "account_number_safe": "5225",
+        "account_number_type": "other",
+        "discarded_at": null,
+        "created_at": "2023-03-03T21:11:27Z",
+        "updated_at": "2023-03-03T21:11:27Z"
+      }
+    ],
+    "routing_details": [
+      {
+        "id": "ffc363e3-edf6-4469-b3cf-1a45615f70a0",
+        "object": "routing_detail",
+        "live_mode": false,
+        "payment_type": null,
+        "routing_number": "021000021",
+        "routing_number_type": "aba",
+        "bank_name": "JPMorgan Chase Bank National Association",
+        "bank_address": {
+          "id": "9f8f84c6-8b06-4232-914f-405009fb392b",
+          "object": "address",
+          "live_mode": false,
+          "line1": "1111 Polaris Parkway",
+          "line2": null,
+          "locality": "Columbus",
+          "region": "OH",
+          "postal_code": "43240",
+          "country": "US",
+          "created_at": "2023-03-03T21:11:27Z",
+          "updated_at": "2023-03-03T21:11:27Z"
+        },
+        "discarded_at": null,
+        "created_at": "2023-03-03T21:11:27Z",
+        "updated_at": "2023-03-03T21:11:27Z"
+      }
+    ],
+    "name": "Expenses",
+    "metadata": {},
+    "connection": {
+      "id": "285ef2ba-b8a1-4765-8e0f-c4c0dad9d5ac",
+      "object": "connection",
+      "live_mode": false,
+      "vendor_id": "example1",
+      "vendor_name": "Gringotts Wizarding Bank",
+      "vendor_customer_id": null,
+      "discarded_at": null,
+      "created_at": "2023-03-03T21:11:27Z",
+      "updated_at": "2023-03-03T21:11:27Z"
+    },
+    "currency": "USD",
+    "parent_account_id": null,
+    "counterparty_id": null,
+    "created_at": "2023-03-03T21:11:27Z",
+    "updated_at": "2023-03-03T21:11:27Z"
+  },
+  {
+    "id": "d80516eb-cfa9-43e3-ae19-194894ccc443",
+    "object": "internal_account",
+    "live_mode": false,
+    "account_type": null,
+    "party_name": "Segmatek",
+    "party_type": null,
+    "party_address": {
+      "id": "20ad9ea2-f408-479c-9f82-22b0a4e9d1b0",
+      "object": "address",
+      "live_mode": false,
+      "line1": "888 Maisie River",
+      "line2": "Suite 763",
+      "locality": "South Robbie",
+      "region": "WI",
+      "postal_code": "80782-2023",
+      "country": "US",
+      "created_at": "2023-03-03T21:11:27Z",
+      "updated_at": "2023-03-03T21:11:27Z"
+    },
+    "account_details": [
+      {
+        "id": "e46cb81f-2bb1-479e-9fa3-c7de31976aee",
+        "object": "account_detail",
+        "live_mode": false,
+        "account_number": "3166926512",
+        "account_number_safe": "6512",
+        "account_number_type": "other",
+        "discarded_at": null,
+        "created_at": "2023-03-03T21:11:27Z",
+        "updated_at": "2023-03-03T21:11:27Z"
+      }
+    ],
+    "routing_details": [
+      {
+        "id": "0e760c34-fe56-4b80-a708-0fda662e6001",
+        "object": "routing_detail",
+        "live_mode": false,
+        "payment_type": null,
+        "routing_number": "021000021",
+        "routing_number_type": "aba",
+        "bank_name": "JPMorgan Chase Bank National Association",
+        "bank_address": {
+          "id": "9f8f84c6-8b06-4232-914f-405009fb392b",
+          "object": "address",
+          "live_mode": false,
+          "line1": "1111 Polaris Parkway",
+          "line2": null,
+          "locality": "Columbus",
+          "region": "OH",
+          "postal_code": "43240",
+          "country": "US",
+          "created_at": "2023-03-03T21:11:27Z",
+          "updated_at": "2023-03-03T21:11:27Z"
+        },
+        "discarded_at": null,
+        "created_at": "2023-03-03T21:11:27Z",
+        "updated_at": "2023-03-03T21:11:27Z"
+      }
+    ],
+    "name": "Revenue",
+    "metadata": {},
+    "connection": {
+      "id": "285ef2ba-b8a1-4765-8e0f-c4c0dad9d5ac",
+      "object": "connection",
+      "live_mode": false,
+      "vendor_id": "example1",
+      "vendor_name": "Gringotts Wizarding Bank",
+      "vendor_customer_id": null,
+      "discarded_at": null,
+      "created_at": "2023-03-03T21:11:27Z",
+      "updated_at": "2023-03-03T21:11:27Z"
+    },
+    "currency": "USD",
+    "parent_account_id": null,
+    "counterparty_id": null,
+    "created_at": "2023-03-03T21:11:27Z",
+    "updated_at": "2023-03-03T21:11:27Z"
+  }
+]

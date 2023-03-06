@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.7.6</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>mapstruct-spike01</artifactId>
@@ -16,9 +17,11 @@
 	<properties>
 		<java.version>11</java.version>
 		<org.mapstruct.version>1.4.1.Final</org.mapstruct.version>
+		<gcp-project-id>gke-test</gcp-project-id>
+		<gcp-project-app></gcp-project-app>
 		<!-- persistence -->
-        <tomcat-dbcp.version>9.0.0.M26</tomcat-dbcp.version>
-        <h2.version>1.4.200</h2.version>
+		<tomcat-dbcp.version>9.0.0.M26</tomcat-dbcp.version>
+		<h2.version>1.4.200</h2.version>
 		<org.springframework.version>5.1.5.RELEASE</org.springframework.version>
 		<m2e.apt.activation>jdt_apt</m2e.apt.activation>
 		<jib-maven-plugin.version>3.3.1</jib-maven-plugin.version>
@@ -40,10 +43,10 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-webflux</artifactId>
-		</dependency>
+		<!-- <dependency> -->
+		<!-- <groupId>org.springframework.boot</groupId> -->
+		<!-- <artifactId>spring-boot-starter-webflux</artifactId> -->
+		<!-- </dependency> -->
 
 		<dependency>
 			<groupId>org.projectlombok</groupId>
@@ -67,38 +70,101 @@
 			<version>31.0.1-jre</version>
 		</dependency>
 
-		  <!-- persistence -->
-		  <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-core</artifactId>
-            <version>${hibernate.version}</version>
-        </dependency>
+		<!-- persistence -->
 		<dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-            <version>${h2.version}</version>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>${hibernate.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>${h2.version}</version>
+			<!-- <scope>test</scope> -->
+		</dependency>
+		<dependency>
+			<groupId>org.apache.tomcat</groupId>
+			<artifactId>tomcat-dbcp</artifactId>
+			<version>${tomcat-dbcp.version}</version>
+		</dependency>
+
+		<!-- test scoped -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<!-- <version>${org.springframework.version}</version> -->
 			<scope>test</scope>
-        </dependency>
+		</dependency>
+
 		<dependency>
-            <groupId>org.apache.tomcat</groupId>
-            <artifactId>tomcat-dbcp</artifactId>
-            <version>${tomcat-dbcp.version}</version>
-        </dependency>
-
-		  <!-- test scoped -->
-		  <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-test</artifactId>
-            <!-- <version>${org.springframework.version}</version> -->
-            <scope>test</scope>
-        </dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-engine</artifactId>
+			<!-- <version>5.8.1</version> -->
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-api</artifactId>
+			<!-- <version>5.8.1</version> -->
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.hamcrest</groupId>
+			<artifactId>hamcrest-library</artifactId>
+<!-- 			<version>2.2</version> -->
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.jayway.jsonpath</groupId>
+			<artifactId>json-path</artifactId>
+<!-- 			<version>2.5.0</version> -->
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
+	<profiles>
+		<profile>
+			<id>gcp</id>
+			<build>
+				<plugins>
+					<!-- Jib -->
+					<plugin>
+						<groupId>com.google.cloud.tools</groupId>
+						<artifactId>jib-maven-plugin</artifactId>
+						<version>${jib-maven-plugin.version}</version>
+						<configuration>
+							<to>
+								<image>gcr.io/gke-test-369206/${artifactId}</image>
+								<!-- <credHelper>ecr-login</credHelper> -->
 
+							</to>
+							<container>
+								<creationTime>USE_CURRENT_TIMESTAMP</creationTime>
+								<jvmFlags>
+									<jvmFlag>-Dmy.property=example.value</jvmFlag>
+									<jvmFlag>-Xms512m</jvmFlag>
+									<jvmFlag>-Xdebug</jvmFlag>
+								</jvmFlags>
+								<mainClass>com.hany.mapstruct.MapstructSpike01Application</mainClass>
+							</container>
+						</configuration>
+						<executions>
+							<execution>
+								<phase>package</phase>
+								<goals>
+									<goal>build</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
 	<build>
 		<plugins>
 			<plugin>
@@ -113,34 +179,7 @@
 					</excludes>
 				</configuration>
 			</plugin>
-			<!-- Jib -->
-			<plugin>
-				<groupId>com.google.cloud.tools</groupId>
-				<artifactId>jib-maven-plugin</artifactId>
-				<version>${jib-maven-plugin.version}</version>
-				<configuration>
-					<to>
-						<image>gcr.io/${groupId}/${artifactId}</image>
-					</to>
-					<container>
-						<creationTime>USE_CURRENT_TIMESTAMP</creationTime>
-						<jvmFlags>
-							<jvmFlag>-Dmy.property=example.value</jvmFlag>
-							<jvmFlag>-Xms512m</jvmFlag>
-							<jvmFlag>-Xdebug</jvmFlag>
-						</jvmFlags>
-						<mainClass>com.hany.mapstruct.MapstructSpike01Application</mainClass>
-					</container>
-				</configuration>
-				<executions>
-					<execution>
-						<phase>package</phase>
-						<goals>
-							<goal>build</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
